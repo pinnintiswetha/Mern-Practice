@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="shortcut icon" href="489869-removebg-preview.png" type="image/x-icon">
+    <style>
+        #myVideo {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            min-width: 100vw; 
+            min-height: 100vh;
+        }
+        h1{
+            color: hsl(269, 96%, 10%);
+            text-shadow: 2px 2px 8px rgb(248, 140, 158);
+            font-size: 50px;  
+            text-transform: capitalize;
+            margin: 10px;
+            text-align: center;
+            margin-left: 0;
+        }
+         img{
+            width: 300px;
+            height: 180px;
+            border-radius: 20px;
+         }
+        .flex-cont{
+            display: flex;
+            text-align: center;
+        }
+        .flex-cont > div{
+            border: 1px solid salmon;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 20px;
+            background-color: rgba(102, 102, 102, 0.4);
+            box-shadow: 5px 5px 10px rgb(74, 66, 67);
+        }
+        span{
+            color: #fcb8e2;
+            text-shadow: 2px 2px 3px rgb(43, 0, 116);
+            font-size: 20px;
+            text-transform: capitalize;
+            margin-right: 50px;
+        }
+        button{
+            cursor: pointer;
+            color: rgb(252, 169, 169);
+            border: 1px solid rgb(255, 163, 163);
+            border-radius: 20px;
+            padding: 10px;
+            margin-right: 10px;
+            background-color: rgba(71, 14, 1, 0.444);
+            box-shadow: 3px 3px 5px rgb(171, 123, 132);
+        }
+        .content{
+            margin-left: 320px;
+            position: fixed;
+        }
+        .lst{
+            margin: 20px;
+            border-radius: 10px;
+            padding: 10px 50px 10px 10px;
+            background-color: rgba(102, 102, 102, 0.4);
+            border: 1px solid rgb(252, 158, 148);
+        }
+        li{
+            list-style-type: none;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+        li a {
+            font-size: 20px;
+            color: hsl(270, 100%, 7%);
+            text-shadow: 1px 1px 3px pink;
+            display: block;
+            width: 60px;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+        }
+        .sd{
+            position: fixed;
+        }
+        .logo{
+            margin: 20px;
+            width: 160px;
+            height: 100px;
+        }
+        a:hover{
+            color: rgb(254, 231, 154);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body> 
+    <video autoplay muted loop id="myVideo">
+        <source src="https://cdn.pixabay.com/video/2017/08/29/11620-231571928_tiny.mp4" type="video/mp4" />
+    </video> 
+    <div class="sd">
+        <img class="logo" src="rest2-removebg-preview.png" alt="logo">
+        <div class="lst">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Orders</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Reviews</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1>restaurant - the best food</h1>
+        <div class="flex-cont">
+            <div>
+                <img src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2023/09/Vegetable-Soup-main.jpg" alt="soup">
+                <div class="btn">
+                    <p><span>Soup</span><button>Order Now</button></p>
+                </div>
+            </div>
+            <div>
+                <img src="https://i.ytimg.com/vi/linUAjLw4w8/maxresdefault.jpg" alt="salad">
+                <div class="btn">
+                    <p><span>Salad</span><button>Order Now</button></p>
+                </div>
+            </div>
+            <div>
+                <img src="https://assets.zeezest.com/images/PROD_A_1664167434483_thumb_500.jpeg" alt="starter">
+                <div class="btn">
+                    <p><span>Starter</span><button>Order Now</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-cont">
+            <div>
+                <img src="https://theindia3.restaurant/wp-content/uploads/2024/04/indian-veg-food.webp" alt="veg">
+                <div class="btn">
+                    <p><span>Vegeterian</span><button>Order Now</button></p>
+                </div>
+            </div>
+            <div>
+                <img src="https://i.ytimg.com/vi/2u983B2wD1k/maxresdefault.jpg" alt="non veg">
+                <div class="btn">
+                    <p><span>Non-Vegeterian</span><button>Order Now</button></p>
+                </div>
+            </div>
+            <div>
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_400/602cfb255b417067a3bc4fc1b46ae6be" alt="">
+                <div class="btn">
+                    <p><span>Biryani</span><button>Order Now</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
